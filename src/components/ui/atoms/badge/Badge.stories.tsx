@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import { Badge } from "./Badge"
+import type { Meta, StoryObj } from "@storybook/react";
+import { Badge } from "./Badge";
 
 const meta: Meta<typeof Badge> = {
   title: "Atoms/Badge",
@@ -19,38 +19,38 @@ const meta: Meta<typeof Badge> = {
       description: "Whether to render as a child component",
     },
   },
-}
+};
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
     children: "Badge",
     variant: "default",
   },
-}
+};
 
 export const Secondary: Story = {
   args: {
     children: "Secondary",
     variant: "secondary",
   },
-}
+};
 
 export const Destructive: Story = {
   args: {
     children: "Destructive",
     variant: "destructive",
   },
-}
+};
 
 export const Outline: Story = {
   args: {
     children: "Outline",
     variant: "outline",
   },
-}
+};
 
 export const AllVariants: Story = {
   render: () => (
@@ -61,7 +61,7 @@ export const AllVariants: Story = {
       <Badge variant="outline">Outline</Badge>
     </div>
   ),
-}
+};
 
 export const AsLink: Story = {
   render: () => (
@@ -69,5 +69,4 @@ export const AsLink: Story = {
       <a href="#">Clickable Badge</a>
     </Badge>
   ),
-}
-
+};
