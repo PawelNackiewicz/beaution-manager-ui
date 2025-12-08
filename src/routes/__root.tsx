@@ -7,7 +7,7 @@ import {
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { useAuth } from "@/features/auth";
 import { useEffect } from "react";
-import { Spinner } from "@/components/ui/atoms/spinner/Spinner";
+import { Spinner } from "@/components";
 
 const PUBLIC_ROUTES = ["/login"];
 

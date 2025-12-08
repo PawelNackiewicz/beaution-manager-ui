@@ -7,8 +7,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/organisms/card/Card";
-import { Spinner } from "@/components/ui/atoms/spinner/Spinner";
+  Spinner,
+} from "@/components";
 
 export const Route = createFileRoute("/login")({
   component: LoginPage,

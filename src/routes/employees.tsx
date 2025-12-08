@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { DashboardLayout } from "@/components/layout/DashboardLayout";
-import { PageHeader } from "@/components/layout/PageHeader";
-import { Button } from "@/components/ui/atoms/button/Button";
+import { DashboardLayout, Button, PageHeader } from "@/components";
 import {
   Plus,
   Mail,

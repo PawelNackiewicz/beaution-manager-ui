@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { DashboardLayout } from "@/components/layout/DashboardLayout";
-import { PageHeader } from "@/components/layout/PageHeader";
-import { Button } from "@/components/ui/atoms/button/Button";
-import { Input } from "@/components/ui/atoms/input/Input";
+import { DashboardLayout, Button, Input, PageHeader } from "@/components";
 import {
   Plus,
   Search,

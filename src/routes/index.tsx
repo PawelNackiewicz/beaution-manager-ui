@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
-import { DashboardLayout } from "@/components/layout/DashboardLayout";
-import { PageHeader } from "@/components/layout/PageHeader";
+import { DashboardLayout, PageHeader } from "@/components";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
