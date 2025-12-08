@@ -58,6 +58,7 @@
     "@storybook/addon-a11y": "^10.1.4",
     "@storybook/addon-docs": "^10.1.4",
     "@storybook/addon-vitest": "^10.1.4",
+    "@storybook/react": "^10.1.4",
     "@storybook/react-vite": "^10.1.4",
     "@tanstack/react-router-devtools": "^1.140.0",
     "@tanstack/router-plugin": "^1.140.0",

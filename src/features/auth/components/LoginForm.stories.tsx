@@ -124,7 +124,7 @@ export const WithCustomHandling: Story = {
       // Simulate API error
       return new Promise((_, reject) => {
         setTimeout(() => {
-          reject(new Error("Authentication failed"));
+          reject(new Error(`Authentication failed: ${email}`));
         }, 1500);
       });
     },
