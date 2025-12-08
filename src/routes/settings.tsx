@@ -1,10 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { DashboardLayout } from "@/components/layout/DashboardLayout";
-import { PageHeader } from "@/components/layout/PageHeader";
-import { Button } from "@/components/ui/atoms/button/Button";
-import { Input } from "@/components/ui/atoms/input/Input";
-import { Label } from "@/components/ui/atoms/label/Label";
-import { Switch } from "@/components/ui/atoms/switch/Switch";
+import {
+  Button,
+  Input,
+  Label,
+  Switch,
+  PageHeader,
+  DashboardLayout,
+} from "@/components";
 import { Building2, Clock, CreditCard, Bell, Save, Upload } from "lucide-react";
 
 export const Route = createFileRoute("/settings")({

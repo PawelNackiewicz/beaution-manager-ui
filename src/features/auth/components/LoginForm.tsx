@@ -1,10 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema, type LoginFormValues } from "../types/auth.types";
-import { Button } from "@/components/ui/atoms/button/Button";
-import { Input } from "@/components/ui/atoms/input/Input";
-import { Label } from "@/components/ui/atoms/label/Label";
-import { Spinner } from "@/components/ui/atoms/spinner/Spinner";
+import { Button, Input, Label, Spinner } from "@/components";
 
 interface LoginFormProps {
   onSubmit: (email: string) => void;
