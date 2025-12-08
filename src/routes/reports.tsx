@@ -328,7 +328,7 @@ function Reports() {
               </tr>
             </thead>
             <tbody>
-              {topEmployees.map((employee, index) => (
+              {topEmployees.map((employee) => (
                 <tr
                   key={employee.name}
                   className="border-b border-border last:border-b-0"
