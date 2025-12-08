@@ -11,14 +11,14 @@ import {
 } from "./Drawer";
 import { Button } from "@/components";
 
-const meta: Meta<typeof Drawer> = {
+const meta = {
   title: "Organisms/Drawer",
   component: Drawer,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-};
+} satisfies Meta<typeof Drawer>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

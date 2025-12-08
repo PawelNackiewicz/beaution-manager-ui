@@ -3,14 +3,14 @@ import { Toaster } from "./Sonner";
 import { Button } from "@/components";
 import { toast } from "sonner";
 
-const meta: Meta<typeof Toaster> = {
+const meta = {
   title: "Organisms/Sonner",
   component: Toaster,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-};
+} satisfies Meta<typeof Toaster>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -142,37 +142,6 @@ export const WithDuration: Story = {
       </div>
     </>
   ),
-};
-
-export const Promise: Story = {
-  render: () => {
-    const promise = () =>
-      new Promise((resolve) =>
-        setTimeout(() => resolve({ name: "Sonner" }), 2000)
-      );
-
-    return (
-      <>
-        <Toaster />
-        <div className="flex flex-col gap-2">
-          <Button
-            variant="outline"
-            onClick={() =>
-              toast.promise(promise, {
-                loading: "Loading...",
-                success: (data: any) => {
-                  return `${data.name} toast has been added`;
-                },
-                error: "Error",
-              })
-            }
-          >
-            Show Promise Toast
-          </Button>
-        </div>
-      </>
-    );
-  },
 };
 
 export const Custom: Story = {
