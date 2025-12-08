@@ -1,4 +1,4 @@
-import { Link, useLocation } from "@tanstack/react-router";
+import { Link, useLocation, useNavigate } from "@tanstack/react-router";
 import {
   Calendar,
   Users,
@@ -11,6 +11,7 @@ import {
   Leaf,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAuth } from "@/features/auth";
 
 const navItems = [
   { icon: Calendar, label: "Kalendarz", path: "/" },
@@ -24,6 +25,17 @@ const navItems = [
 
 export function Sidebar() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    navigate({ to: "/login" });
+  };
+
+  const userInitials = user?.email
+    ? user.email.split("@")[0].slice(0, 2).toUpperCase()
+    : "??";
 
   return (
     <aside className="fixed left-0 top-0 z-40 h-screen w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
@@ -62,16 +74,20 @@ export function Sidebar() {
         <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-sidebar-accent/50">
           <div className="w-9 h-9 rounded-full bg-sidebar-primary/20 flex items-center justify-center">
             <span className="text-sm font-semibold text-sidebar-primary">
-              AK
+              {userInitials}
             </span>
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-sidebar-foreground truncate">
-              Anna Kowalska
+              {user?.email ?? "Gość"}
             </p>
-            <p className="text-xs text-sidebar-foreground/60">Właściciel</p>
+            <p className="text-xs text-sidebar-foreground/60">Zalogowany</p>
           </div>
-          <button className="p-1.5 rounded-lg hover:bg-sidebar-accent transition-colors">
+          <button
+            onClick={handleLogout}
+            className="p-1.5 rounded-lg hover:bg-sidebar-accent transition-colors"
+            title="Wyloguj się"
+          >
             <LogOut className="w-4 h-4 text-sidebar-foreground/60" />
           </button>
         </div>
