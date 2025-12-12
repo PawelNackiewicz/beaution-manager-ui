@@ -1,21 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { format } from "date-fns";
-import { pl } from "date-fns/locale";
-import { DashboardLayout, PageHeader } from "@/components";
+import {
+  Header,
+  HeroSection,
+  SocialProofBar,
+  FeaturesSection,
+  BenefitsTimeline,
+  TestimonialsSection,
+  PricingSection,
+  FAQSection,
+  FinalCTA,
+  Footer,
+} from "@/features/landing";
 
 export const Route = createFileRoute("/")({
-  component: RouteComponent,
+  component: LandingPage,
 });
 
-function RouteComponent() {
-  const today = format(new Date(), "EEEE, d MMMM", { locale: pl });
-
+function LandingPage() {
   return (
-    <DashboardLayout>
-      <PageHeader
-        title="Kalendarz wizyt"
-        description={`${today} • Zarządzaj wizytami i harmonogramem`}
-      />
-    </DashboardLayout>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <HeroSection />
+        <SocialProofBar />
+        <FeaturesSection />
+        <BenefitsTimeline />
+        <TestimonialsSection />
+        <PricingSection />
+        <FAQSection />
+        <FinalCTA />
+      </main>
+      <Footer />
+    </div>
   );
 }

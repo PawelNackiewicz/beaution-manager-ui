@@ -86,12 +86,15 @@
   --gradient-primary: linear-gradient(135deg, oklch(0.55 0.15 160) 0%, oklch(0.6 0.13 165) 100%);
   --gradient-hero: linear-gradient(180deg, oklch(0.975 0.01 160) 0%, oklch(0.96 0.015 160) 100%);
   --gradient-card: linear-gradient(180deg, oklch(1 0 0) 0%, oklch(0.98 0.01 160) 100%);
+  --gradient-cta: linear-gradient(135deg, hsl(152, 76%, 45%) 0%, hsl(145, 70%, 38%) 100%);
+  --gradient-dark: linear-gradient(135deg, hsl(152, 40%, 15%) 0%, hsl(150, 30%, 10%) 100%);
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 oklch(0.15 0.015 160 / 0.03);
   --shadow-md: 0 4px 6px -1px oklch(0.15 0.015 160 / 0.05), 0 2px 4px -2px oklch(0.15 0.015 160 / 0.03);
   --shadow-lg: 0 10px 15px -3px oklch(0.15 0.015 160 / 0.08), 0 4px 6px -4px oklch(0.15 0.015 160 / 0.03);
   --shadow-xl: 0 20px 25px -5px oklch(0.15 0.015 160 / 0.1), 0 8px 10px -6px oklch(0.15 0.015 160 / 0.05);
   --shadow-glow: 0 0 20px oklch(0.55 0.15 160 / 0.15);
+  --shadow-cta: 0 8px 32px -4px hsl(152 76% 40% / 0.4);
   /* Sidebar */
   --sidebar: oklch(0.22 0.04 160);
   --sidebar-foreground: oklch(0.92 0.02 160);
@@ -180,5 +183,31 @@
 
   .sidebar-item-active {
     @apply bg-sidebar-accent text-sidebar-primary font-medium;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+  
+  .cta-glow {
+    box-shadow: var(--shadow-cta);
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .bg-gradient-cta {
+    background-image: var(--gradient-cta);
+  }
+
+  .shadow-cta {
+    box-shadow: var(--shadow-cta);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
   }
 }

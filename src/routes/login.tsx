@@ -20,13 +20,13 @@ function LoginPage() {
 
   useEffect(() => {
     if (!isLoading && user?.isLoggedIn) {
-      navigate({ to: "/" });
+      navigate({ to: "/dashboard" });
     }
   }, [isLoading, user, navigate]);
 
   const handleLogin = (email: string) => {
     login(email);
-    navigate({ to: "/" });
+    navigate({ to: "/dashboard" });
   };
 
   if (isLoading) {
