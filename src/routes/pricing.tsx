@@ -79,10 +79,7 @@ function PricingPage() {
             >
               Funkcje
             </Link>
-            <Link
-              to="/pricing"
-              className="text-sm font-medium text-primary"
-            >
+            <Link to="/pricing" className="text-sm font-medium text-primary">
               Cennik
             </Link>
             <Link
@@ -172,9 +169,7 @@ function PricingPage() {
               </p>
             </div>
             <div className="p-6 rounded-lg border bg-card">
-              <h3 className="font-semibold mb-2">
-                Czy jest okres próbny?
-              </h3>
+              <h3 className="font-semibold mb-2">Czy jest okres próbny?</h3>
               <p className="text-muted-foreground">
                 Wszystkie plany oferują 14-dniowy darmowy okres próbny. Nie
                 potrzebujesz karty kredytowej, aby rozpocząć.
@@ -190,9 +185,7 @@ function PricingPage() {
               </p>
             </div>
             <div className="p-6 rounded-lg border bg-card">
-              <h3 className="font-semibold mb-2">
-                Czy dane są bezpieczne?
-              </h3>
+              <h3 className="font-semibold mb-2">Czy dane są bezpieczne?</h3>
               <p className="text-muted-foreground">
                 Tak, wszystkie dane są szyfrowane i przechowywane zgodnie z RODO
                 na serwerach w UE. Wykonujemy codzienne backupy.
@@ -228,5 +221,3 @@ function PricingPage() {
     </div>
   );
 }
-
-

@@ -203,6 +203,10 @@
     background-image: var(--gradient-cta);
   }
 
+  .bg-gradient-dark {
+    background-image: var(--gradient-dark);
+  }
+
   .shadow-cta {
     box-shadow: var(--shadow-cta);
   }

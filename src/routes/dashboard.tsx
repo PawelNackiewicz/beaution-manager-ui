@@ -19,5 +19,3 @@ function DashboardPage() {
     </DashboardLayout>
   );
 }
-
-

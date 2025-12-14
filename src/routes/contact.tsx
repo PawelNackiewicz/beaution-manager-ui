@@ -71,10 +71,7 @@ function ContactPage() {
             >
               Cennik
             </Link>
-            <Link
-              to="/contact"
-              className="text-sm font-medium text-primary"
-            >
+            <Link to="/contact" className="text-sm font-medium text-primary">
               Kontakt
             </Link>
             <Link to="/login">
@@ -190,9 +187,7 @@ function ContactPage() {
                   <div className="text-2xl">📧</div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">
-                      kontakt@beaution.pl
-                    </p>
+                    <p className="text-muted-foreground">kontakt@beaution.pl</p>
                     <p className="text-sm text-muted-foreground">
                       Odpowiadamy w ciągu 24h
                     </p>
@@ -313,5 +308,3 @@ function ContactPage() {
     </div>
   );
 }
-
-

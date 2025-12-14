@@ -17,15 +17,19 @@ export const Header = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
+    const scrollContainer = document.querySelector("main");
+    if (!scrollContainer) return;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      const scrollTop = scrollContainer.scrollTop;
+      setIsScrolled(scrollTop > 20);
       const scrollHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (window.scrollY / scrollHeight) * 100;
+        scrollContainer.scrollHeight - scrollContainer.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
       setScrollProgress(progress);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    scrollContainer.addEventListener("scroll", handleScroll);
+    return () => scrollContainer.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
