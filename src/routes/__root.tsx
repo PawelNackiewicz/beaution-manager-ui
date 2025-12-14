@@ -9,7 +9,7 @@ import { useAuth } from "@/features/auth";
 import { useEffect } from "react";
 import { Spinner } from "@/components";
 
-const PUBLIC_ROUTES = ["/login"];
+const PUBLIC_ROUTES = ["/", "/login", "/functions", "/pricing", "/contact"];
 
 const RootLayout = () => {
   const navigate = useNavigate();
@@ -23,8 +23,10 @@ const RootLayout = () => {
 
     if (!user?.isLoggedIn && !isPublicRoute) {
       navigate({ to: "/login" });
+    } else if (user?.isLoggedIn && location.pathname === "/") {
+      navigate({ to: "/dashboard" });
     }
-  }, [user, isLoading, isPublicRoute, navigate]);
+  }, [user, isLoading, isPublicRoute, navigate, location.pathname]);
 
   if (isLoading) {
     return (

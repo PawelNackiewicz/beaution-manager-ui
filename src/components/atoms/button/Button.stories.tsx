@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import { Mail, Loader2, ChevronRight } from "lucide-react"
-import { Button } from "./Button"
+import type { Meta, StoryObj } from "@storybook/react";
+import { Mail, Loader2, ChevronRight } from "lucide-react";
+import { Button } from "./Button";
 
 const meta: Meta<typeof Button> = {
   title: "Atoms/Button",
@@ -12,12 +12,32 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     variant: {
       control: "select",
-      options: ["default", "destructive", "outline", "secondary", "ghost", "link"],
+      options: [
+        "default",
+        "destructive",
+        "outline",
+        "secondary",
+        "ghost",
+        "link",
+        "cta",
+        "hero",
+        "hero-outline",
+      ],
       description: "The visual style of the button",
     },
     size: {
       control: "select",
-      options: ["default", "sm", "lg", "icon", "icon-sm", "icon-lg"],
+      options: [
+        "default",
+        "sm",
+        "lg",
+        "icon",
+        "icon-sm",
+        "icon-lg",
+        "hero",
+        "hero-outline",
+        "cta",
+      ],
       description: "The size of the button",
     },
     asChild: {
@@ -29,10 +49,10 @@ const meta: Meta<typeof Button> = {
       description: "Whether the button is disabled",
     },
   },
-}
+};
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
@@ -40,56 +60,56 @@ export const Default: Story = {
     variant: "default",
     size: "default",
   },
-}
+};
 
 export const Secondary: Story = {
   args: {
     children: "Secondary",
     variant: "secondary",
   },
-}
+};
 
 export const Destructive: Story = {
   args: {
     children: "Destructive",
     variant: "destructive",
   },
-}
+};
 
 export const Outline: Story = {
   args: {
     children: "Outline",
     variant: "outline",
   },
-}
+};
 
 export const Ghost: Story = {
   args: {
     children: "Ghost",
     variant: "ghost",
   },
-}
+};
 
 export const Link: Story = {
   args: {
     children: "Link",
     variant: "link",
   },
-}
+};
 
 export const Small: Story = {
   args: {
     children: "Small",
     size: "sm",
   },
-}
+};
 
 export const Large: Story = {
   args: {
     children: "Large",
     size: "lg",
   },
-}
+};
 
 export const Icon: Story = {
   args: {
@@ -97,7 +117,7 @@ export const Icon: Story = {
     size: "icon",
     "aria-label": "Send email",
   },
-}
+};
 
 export const IconSmall: Story = {
   args: {
@@ -105,7 +125,7 @@ export const IconSmall: Story = {
     size: "icon-sm",
     "aria-label": "Send email",
   },
-}
+};
 
 export const IconLarge: Story = {
   args: {
@@ -113,7 +133,7 @@ export const IconLarge: Story = {
     size: "icon-lg",
     "aria-label": "Send email",
   },
-}
+};
 
 export const WithIcon: Story = {
   args: {
@@ -123,7 +143,7 @@ export const WithIcon: Story = {
       </>
     ),
   },
-}
+};
 
 export const Loading: Story = {
   args: {
@@ -134,14 +154,35 @@ export const Loading: Story = {
     ),
     disabled: true,
   },
-}
+};
 
 export const Disabled: Story = {
   args: {
     children: "Disabled",
     disabled: true,
   },
-}
+};
+
+export const CTA: Story = {
+  args: {
+    children: "CTA",
+    variant: "cta",
+  },
+};
+
+export const Hero: Story = {
+  args: {
+    children: "Hero",
+    variant: "hero",
+  },
+};
+
+export const HeroOutline: Story = {
+  args: {
+    children: "Hero Outline",
+    variant: "hero-outline",
+  },
+};
 
 export const AllVariants: Story = {
   render: () => (
@@ -172,5 +213,4 @@ export const AllVariants: Story = {
       </div>
     </div>
   ),
-}
-
+};
