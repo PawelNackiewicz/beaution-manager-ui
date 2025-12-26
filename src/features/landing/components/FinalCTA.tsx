@@ -35,9 +35,14 @@ export const FinalCTA = () => {
             Gotowy na przekształcenie swojego salonu?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+<<<<<<< HEAD
             Dołącz do ponad 2500 właścicieli salonów, którzy już dokonali
             zmiany. Rozpocznij darmowy okres próbny już dziś i zobacz różnicę w
             zaledwie tydzień.
+=======
+            Dołącz do ponad 2500 właścicieli salonów, którzy już dokonali zmiany.
+            Rozpocznij darmowy okres próbny już dziś i zobacz różnicę w zaledwie tydzień.
+>>>>>>> 3dc2818ea8896b467e844e0f3642c7a5a38e7e70
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -53,8 +58,12 @@ export const FinalCTA = () => {
           </div>
 
           <p className="text-sm text-primary-foreground/60 mt-6">
+<<<<<<< HEAD
             Nie wymagamy karty kredytowej • Anuluj w dowolnym momencie • Pełny
             dostęp do funkcji
+=======
+            Nie wymagamy karty kredytowej • Anuluj w dowolnym momencie • Pełny dostęp do funkcji
+>>>>>>> 3dc2818ea8896b467e844e0f3642c7a5a38e7e70
           </p>
         </motion.div>
       </div>
