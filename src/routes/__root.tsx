@@ -9,7 +9,14 @@ import { useAuth } from "@/features/auth";
 import { useEffect } from "react";
 import { Spinner } from "@/components";
 
-const PUBLIC_ROUTES = ["/", "/login", "/functions", "/pricing", "/contact"];
+const PUBLIC_ROUTES = [
+  "/",
+  "/login",
+  "/signup",
+  "/functions",
+  "/pricing",
+  "/contact",
+];
 
 const RootLayout = () => {
   const navigate = useNavigate();

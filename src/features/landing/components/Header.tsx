@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 import { Button } from "@/components";
 import { Menu, X, Sparkles } from "lucide-react";
 
@@ -62,8 +63,12 @@ export const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="cta">Start Free Trial</Button>
+            <Link to="/login">
+              <Button variant="ghost">Sign In</Button>
+            </Link>
+            <Link to="/signup">
+              <Button variant="cta">Start Free Trial</Button>
+            </Link>
           </div>
 
           <button
@@ -108,12 +113,11 @@ export const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="w-full justify-center">
-                  Sign In
-                </Button>
-                <Button variant="cta" className="w-full justify-center">
-                  Start Free Trial
-                </Button>
+                <Link to="/login" className="w-full">
+                  <Button variant="ghost" className="w-full justify-center">
+                    Sign In
+                  </Button>
+                </Link>
               </div>
             </nav>
           </motion.div>
