@@ -6,52 +6,52 @@ import { Check, Sparkles } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    description: "Perfect for solo stylists and small teams",
+    description: "Idealny dla samodzielnych stylistów i małych zespołów",
     price: 29,
-    period: "/month",
+    period: "/miesiąc",
     features: [
-      "Up to 3 team members",
-      "Unlimited appointments",
-      "Basic client management",
-      "Email reminders",
-      "Online booking page",
-      "Payment processing",
+      "Do 3 członków zespołu",
+      "Nieograniczone wizyty",
+      "Podstawowe zarządzanie klientami",
+      "Przypomnienia e-mail",
+      "Strona rezerwacji online",
+      "Przetwarzanie płatności",
     ],
-    cta: "Start Free Trial",
+    cta: "Rozpocznij darmowy okres",
     popular: false,
   },
   {
     name: "Professional",
-    description: "Ideal for growing salons",
+    description: "Idealny dla rozwijających się salonów",
     price: 79,
-    period: "/month",
+    period: "/miesiąc",
     features: [
-      "Up to 10 team members",
-      "Everything in Starter",
-      "SMS reminders",
-      "Advanced analytics",
-      "Marketing automation",
-      "Custom branding",
-      "Priority support",
+      "Do 10 członków zespołu",
+      "Wszystko ze Starter",
+      "Przypomnienia SMS",
+      "Zaawansowane analizy",
+      "Automatyzacja marketingu",
+      "Własny branding",
+      "Priorytetowe wsparcie",
     ],
-    cta: "Start Free Trial",
+    cta: "Rozpocznij darmowy okres",
     popular: true,
   },
   {
     name: "Enterprise",
-    description: "For multi-location businesses",
+    description: "Dla firm z wieloma lokalizacjami",
     price: 199,
-    period: "/month",
+    period: "/miesiąc",
     features: [
-      "Unlimited team members",
-      "Everything in Professional",
-      "Multi-location support",
-      "API access",
-      "Dedicated account manager",
-      "Custom integrations",
-      "SLA guarantee",
+      "Nieograniczona liczba członków zespołu",
+      "Wszystko z Professional",
+      "Wsparcie wielu lokalizacji",
+      "Dostęp do API",
+      "Dedykowany opiekun konta",
+      "Niestandardowe integracje",
+      "Gwarancja SLA",
     ],
-    cta: "Contact Sales",
+    cta: "Skontaktuj się z działem sprzedaży",
     popular: false,
   },
 ];
@@ -72,14 +72,14 @@ export const PricingSection = () => {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Pricing
+            Cennik
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Simple, Transparent Pricing
+            Prosty, przejrzysty cennik
           </h2>
           <p className="text-muted-foreground">
-            Choose the plan that fits your salon. All plans include a 14-day
-            free trial.
+            Wybierz plan dopasowany do Twojego salonu. Wszystkie plany zawierają
+            14-dniowy darmowy okres próbny.
           </p>
         </motion.div>
 
@@ -102,7 +102,7 @@ export const PricingSection = () => {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-cta text-primary-foreground text-sm font-medium">
                     <Sparkles className="w-4 h-4" />
-                    Most Popular
+                    Najpopularniejszy
                   </div>
                 </div>
               )}
