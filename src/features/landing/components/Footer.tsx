@@ -1,10 +1,10 @@
 import { Sparkles, Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
-  Product: ["Features", "Pricing", "Integrations", "Updates"],
-  Company: ["About", "Blog", "Careers", "Press"],
-  Resources: ["Help Center", "Tutorials", "API Docs", "Community"],
-  Legal: ["Privacy", "Terms", "Security", "Cookies"],
+  Produkt: ["Funkcje", "Cennik", "Integracje", "Aktualizacje"],
+  Firma: ["O nas", "Blog", "Kariera", "Prasa"],
+  Zasoby: ["Centrum pomocy", "Samouczki", "Dokumentacja API", "Społeczność"],
+  Prawne: ["Prywatność", "Warunki", "Bezpieczeństwo", "Ciasteczka"],
 };
 
 export const Footer = () => {
@@ -23,8 +23,8 @@ export const Footer = () => {
               </span>
             </a>
             <p className="text-muted-foreground text-sm mb-6 max-w-xs">
-              The modern salon management platform that helps beauty
-              professionals thrive.
+              Nowoczesna platforma do zarządzania salonem, która pomaga
+              profesjonalistom beauty prosperować.
             </p>
             <div className="space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -65,20 +65,20 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Beaution. All rights reserved.
+            © {new Date().getFullYear()} Beaution. Wszelkie prawa zastrzeżone.
           </p>
           <div className="flex items-center gap-6">
             <a
               href="#"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              Privacy Policy
+              Polityka prywatności
             </a>
             <a
               href="#"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              Terms of Service
+              Warunki korzystania z usługi
             </a>
           </div>
         </div>

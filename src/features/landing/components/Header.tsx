@@ -4,10 +4,10 @@ import { Button } from "@/components";
 import { Menu, X, Sparkles } from "lucide-react";
 
 const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#benefits" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Funkcje", href: "#features" },
+  { label: "Jak to działa", href: "#benefits" },
+  { label: "Opinie", href: "#testimonials" },
+  { label: "Cennik", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -62,8 +62,8 @@ export const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="cta">Start Free Trial</Button>
+            <Button variant="ghost">Zaloguj się</Button>
+            <Button variant="cta">Rozpocznij darmowy okres próbny</Button>
           </div>
 
           <button
@@ -109,10 +109,10 @@ export const Header = () => {
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button variant="ghost" className="w-full justify-center">
-                  Sign In
+                  Zaloguj się
                 </Button>
                 <Button variant="cta" className="w-full justify-center">
-                  Start Free Trial
+                  Rozpocznij darmowy okres próbny
                 </Button>
               </div>
             </nav>
