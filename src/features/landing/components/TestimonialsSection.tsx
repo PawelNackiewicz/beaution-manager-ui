@@ -8,26 +8,26 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 const testimonials = [
   {
     name: "Sarah Martinez",
-    role: "Owner, Luxe Hair Studio",
+    role: "Właścicielka, Luxe Hair Studio",
     image: testimonial1,
     quote:
-      "Beaution completely transformed how we run our salon. No more double bookings, no more missed appointments. Our revenue is up 35% since we started using it.",
+      "Beaution całkowicie zmienił sposób, w jaki prowadzimy nasz salon. Koniec z podwójnymi rezerwacjami, koniec z pominiętymi wizytami. Nasze przychody wzrosły o 35% odkąd zaczęliśmy z niego korzystać.",
     rating: 5,
   },
   {
     name: "James Chen",
-    role: "Founder, The Grooming Room",
+    role: "Założyciel, The Grooming Room",
     image: testimonial2,
     quote:
-      "The analytics alone are worth it. I finally understand which services bring in the most profit and which stylists are crushing it. Game changer.",
+      "Same analizy są tego warte. W końcu rozumiem, które usługi przynoszą największy zysk i którzy styliści radzą sobie najlepiej. Przełom.",
     rating: 5,
   },
   {
     name: "Emily Thompson",
-    role: "Manager, Serenity Spa & Wellness",
+    role: "Menedżerka, Serenity Spa & Wellness",
     image: testimonial3,
     quote:
-      "Our clients love the online booking and automatic reminders. We've cut no-shows by 80% and our team can focus on what they do best — making people feel beautiful.",
+      "Nasi klienci uwielbiają rezerwacje online i automatyczne przypomnienia. Zmniejszyliśmy niestawiennictwa o 80%, a nasz zespół może skupić się na tym, co robi najlepiej — sprawianiu, że ludzie czują się piękni.",
     rating: 5,
   },
 ];
@@ -59,14 +59,14 @@ export const TestimonialsSection = () => {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Testimonials
+            Opinie
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Loved by Salon Owners Everywhere
+            Kochany przez właścicieli salonów na całym świecie
           </h2>
           <p className="text-muted-foreground">
-            See why thousands of beauty professionals trust Beaution to run
-            their businesses.
+            Zobacz, dlaczego tysiące profesjonalistów beauty ufa Beaution
+            w prowadzeniu swoich biznesów.
           </p>
         </motion.div>
 

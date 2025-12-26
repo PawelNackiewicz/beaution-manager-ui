@@ -12,39 +12,39 @@ import {
 const features = [
   {
     icon: Calendar,
-    title: "Smart Scheduling",
+    title: "Inteligentne planowanie",
     description:
-      "Intuitive calendar with drag-and-drop, automated reminders, and real-time availability updates.",
+      "Intuicyjny kalendarz z funkcją przeciągnij i upuść, automatycznymi przypomnieniami i aktualizacjami dostępności w czasie rzeczywistym.",
   },
   {
     icon: Users,
-    title: "Client Management",
+    title: "Zarządzanie klientami",
     description:
-      "Complete client profiles with visit history, preferences, and personalized notes.",
+      "Kompletne profile klientów z historią wizyt, preferencjami i spersonalizowanymi notatkami.",
   },
   {
     icon: CreditCard,
-    title: "Seamless Payments",
+    title: "Płynne płatności",
     description:
-      "Accept all payment methods with integrated POS, invoicing, and automatic receipts.",
+      "Akceptuj wszystkie metody płatności dzięki zintegrowanemu systemowi POS, fakturowaniu i automatycznym paragonom.",
   },
   {
     icon: BarChart3,
-    title: "Analytics Dashboard",
+    title: "Panel analityczny",
     description:
-      "Track revenue, busiest hours, top services, and staff performance at a glance.",
+      "Śledź przychody, godziny szczytu, najpopularniejsze usługi i wydajność personelu na pierwszy rzut oka.",
   },
   {
     icon: Bell,
-    title: "Automated Marketing",
+    title: "Zautomatyzowany marketing",
     description:
-      "Smart email & SMS campaigns for birthdays, promotions, and re-engagement.",
+      "Inteligentne kampanie e-mail i SMS z okazji urodzin, promocji i reaktywacji klientów.",
   },
   {
     icon: Palette,
-    title: "Custom Branding",
+    title: "Własny branding",
     description:
-      "White-label booking pages that match your salon's unique style and identity.",
+      "Strony rezerwacji white-label, które pasują do unikalnego stylu i tożsamości Twojego salonu.",
   },
 ];
 
@@ -64,14 +64,14 @@ export const FeaturesSection = () => {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Features
+            Funkcje
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Everything You Need to Run Your Salon
+            Wszystko, czego potrzebujesz do prowadzenia salonu
           </h2>
           <p className="text-muted-foreground">
-            Powerful tools designed specifically for beauty professionals to
-            save time, reduce no-shows, and grow their business.
+            Potężne narzędzia zaprojektowane specjalnie dla profesjonalistów beauty,
+            aby oszczędzać czas, redukować niestawiennictwa i rozwijać biznes.
           </p>
         </motion.div>
 

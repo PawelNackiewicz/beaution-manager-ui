@@ -27,16 +27,16 @@ export const FinalCTA = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/30 mb-6">
             <Clock className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-primary-foreground">
-              Limited Time: Get 20% off your first 3 months
+              Oferta ograniczona: Zdobądź 20% zniżki na pierwsze 3 miesiące
             </span>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-            Ready to Transform Your Salon?
+            Gotowy na przekształcenie swojego salonu?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl mx-auto">
-            Join 2,500+ salon owners who've already made the switch. Start your
-            free trial today and see the difference in just one week.
+            Dołącz do ponad 2500 właścicieli salonów, którzy już dokonali zmiany.
+            Rozpocznij darmowy okres próbny już dziś i zobacz różnicę w zaledwie tydzień.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -46,13 +46,13 @@ export const FinalCTA = () => {
               className="group bg-background text-foreground hover:bg-background/90"
             >
               <Sparkles className="w-5 h-5" />
-              Start Free 14-Day Trial
+              Rozpocznij darmowy 14-dniowy okres próbny
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
           <p className="text-sm text-primary-foreground/60 mt-6">
-            No credit card required • Cancel anytime • Full feature access
+            Nie wymagamy karty kredytowej • Anuluj w dowolnym momencie • Pełny dostęp do funkcji
           </p>
         </motion.div>
       </div>
