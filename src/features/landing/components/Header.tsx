@@ -64,10 +64,10 @@ export const Header = () => {
 
           <div className="hidden md:flex items-center gap-3">
             <Link to="/login">
-              <Button variant="ghost">Sign In</Button>
+              <Button variant="ghost">Zaloguj się</Button>
             </Link>
             <Link to="/signup">
-              <Button variant="cta">Start Free Trial</Button>
+              <Button variant="cta">Rozpocznij darmowy okres</Button>
             </Link>
           </div>
 
@@ -115,7 +115,12 @@ export const Header = () => {
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Link to="/login" className="w-full">
                   <Button variant="ghost" className="w-full justify-center">
-                    Sign In
+                    Zaloguj się
+                  </Button>
+                </Link>
+                <Link to="/signup" className="w-full">
+                  <Button variant="cta" className="w-full justify-center">
+                    Rozpocznij darmowy okres próbny
                   </Button>
                 </Link>
               </div>

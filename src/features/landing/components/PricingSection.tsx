@@ -17,7 +17,7 @@ const plans = [
       "Strona rezerwacji online",
       "Przetwarzanie płatności",
     ],
-    cta: "Rozpocznij darmowy okres próbny",
+    cta: "Rozpocznij darmowy okres",
     popular: false,
   },
   {
@@ -34,7 +34,7 @@ const plans = [
       "Własny branding",
       "Priorytetowe wsparcie",
     ],
-    cta: "Rozpocznij darmowy okres próbny",
+    cta: "Rozpocznij darmowy okres",
     popular: true,
   },
   {
