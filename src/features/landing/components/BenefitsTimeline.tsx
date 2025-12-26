@@ -33,11 +33,15 @@ const timelineSteps = [
     title: "Popołudniowy rytm",
     description:
       "Przetwarzaj płatności natychmiast, wysyłaj paragony i pozwól klientom umówić się ponownie zanim wyjdą.",
+<<<<<<< HEAD
     benefits: [
       "Płatności jednym kliknięciem",
       "Natychmiastowa rezerwacja",
       "Sugestie dodatkowych usług",
     ],
+=======
+    benefits: ["Płatności jednym kliknięciem", "Natychmiastowa rezerwacja", "Sugestie dodatkowych usług"],
+>>>>>>> 3dc2818 (translate landing to PL)
   },
   {
     time: "18:00",
@@ -45,11 +49,15 @@ const timelineSteps = [
     title: "Czas zamknięcia",
     description:
       "Przejrzyj przychody dnia, wyślij wiadomości z podziękowaniami i pozwól na wysłanie przypomnień na jutro.",
+<<<<<<< HEAD
     benefits: [
       "Raporty dzienne",
       "Automatyczne e-maile z podziękowaniami",
       "Przygotowanie na następny dzień",
     ],
+=======
+    benefits: ["Raporty dzienne", "Automatyczne e-maile z podziękowaniami", "Przygotowanie na następny dzień"],
+>>>>>>> 3dc2818 (translate landing to PL)
   },
 ];
 
@@ -75,8 +83,13 @@ export const BenefitsTimeline = () => {
             Dzień w Twoim przekształconym salonie
           </h2>
           <p className="text-muted-foreground">
+<<<<<<< HEAD
             Zobacz, jak Beaution usprawnia każdy moment Twojego dnia pracy, od
             otwarcia do zamknięcia.
+=======
+            Zobacz, jak Beaution usprawnia każdy moment Twojego dnia pracy,
+            od otwarcia do zamknięcia.
+>>>>>>> 3dc2818 (translate landing to PL)
           </p>
         </motion.div>
 

@@ -55,9 +55,15 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
           >
+<<<<<<< HEAD
             Kompleksowa platforma, która pomaga profesjonalistom beauty
             zarządzać wizytami, zachwycać klientów i zwiększać przychody —
             wszystko z jednego pięknego panelu.
+=======
+            Kompleksowa platforma, która pomaga profesjonalistom beauty zarządzać
+            wizytami, zachwycać klientów i zwiększać przychody — wszystko z jednego
+            pięknego panelu.
+>>>>>>> 3dc2818 (translate landing to PL)
           </motion.p>
 
           {/* CTA Buttons */}
@@ -131,10 +137,15 @@ export const HeroSection = () => {
                   <div>
                     <p className="text-xs text-muted-foreground">
                       Wzrost przychodów
+<<<<<<< HEAD
                     </p>
                     <p className="font-semibold text-foreground">
                       W tym miesiącu
                     </p>
+=======
+                    </p>
+                    <p className="font-semibold text-foreground">W tym miesiącu</p>
+>>>>>>> 3dc2818 (translate landing to PL)
                   </div>
                 </div>
               </motion.div>

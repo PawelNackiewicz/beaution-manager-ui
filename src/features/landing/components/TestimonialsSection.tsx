@@ -65,8 +65,13 @@ export const TestimonialsSection = () => {
             Kochany przez właścicieli salonów na całym świecie
           </h2>
           <p className="text-muted-foreground">
+<<<<<<< HEAD
             Zobacz, dlaczego tysiące profesjonalistów beauty ufa Beaution w
             prowadzeniu swoich biznesów.
+=======
+            Zobacz, dlaczego tysiące profesjonalistów beauty ufa Beaution
+            w prowadzeniu swoich biznesów.
+>>>>>>> 3dc2818 (translate landing to PL)
           </p>
         </motion.div>
 

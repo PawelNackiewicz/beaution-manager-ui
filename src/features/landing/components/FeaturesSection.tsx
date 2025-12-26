@@ -70,9 +70,14 @@ export const FeaturesSection = () => {
             Wszystko, czego potrzebujesz do prowadzenia salonu
           </h2>
           <p className="text-muted-foreground">
+<<<<<<< HEAD
             Potężne narzędzia zaprojektowane specjalnie dla profesjonalistów
             beauty, aby oszczędzać czas, redukować niestawiennictwa i rozwijać
             biznes.
+=======
+            Potężne narzędzia zaprojektowane specjalnie dla profesjonalistów beauty,
+            aby oszczędzać czas, redukować niestawiennictwa i rozwijać biznes.
+>>>>>>> 3dc2818 (translate landing to PL)
           </p>
         </motion.div>
 
