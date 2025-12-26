@@ -62,13 +62,8 @@ export const FAQSection = () => {
             Najczęściej zadawane pytania
           </h2>
           <p className="text-muted-foreground">
-<<<<<<< HEAD
             Masz pytania? Mamy odpowiedzi. Nie możesz znaleźć tego, czego
             szukasz? Skontaktuj się z naszym zespołem wsparcia.
-=======
-            Masz pytania? Mamy odpowiedzi. Nie możesz znaleźć tego, czego szukasz?
-            Skontaktuj się z naszym zespołem wsparcia.
->>>>>>> 3dc2818 (translate landing to PL)
           </p>
         </motion.div>
 
