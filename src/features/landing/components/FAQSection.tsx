@@ -9,34 +9,34 @@ import {
 
 const faqs = [
   {
-    question: "How long is the free trial?",
+    question: "Jak długo trwa darmowy okres próbny?",
     answer:
-      "Our free trial lasts 14 days and gives you full access to all features in the Professional plan. No credit card required to start.",
+      "Nasz darmowy okres próbny trwa 14 dni i daje pełny dostęp do wszystkich funkcji planu Professional. Nie wymagamy karty kredytowej na start.",
   },
   {
-    question: "Can I switch plans later?",
+    question: "Czy mogę później zmienić plan?",
     answer:
-      "Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.",
+      "Oczywiście! Możesz w każdej chwili zmienić plan na wyższy lub niższy. Zmiany wchodzą w życie na początku następnego cyklu rozliczeniowego.",
   },
   {
-    question: "Is my data secure?",
+    question: "Czy moje dane są bezpieczne?",
     answer:
-      "Yes, we take security seriously. All data is encrypted in transit and at rest. We're GDPR compliant and never sell your data to third parties.",
+      "Tak, poważnie traktujemy bezpieczeństwo. Wszystkie dane są szyfrowane podczas przesyłania i przechowywania. Jesteśmy zgodni z RODO i nigdy nie sprzedajemy Twoich danych stronom trzecim.",
   },
   {
-    question: "Do you offer training?",
+    question: "Czy oferujecie szkolenia?",
     answer:
-      "We provide comprehensive onboarding for all new customers, including video tutorials, live webinars, and dedicated support during your first month.",
+      "Zapewniamy kompleksowe wdrożenie dla wszystkich nowych klientów, w tym samouczki wideo, webinary na żywo i dedykowane wsparcie w pierwszym miesiącu.",
   },
   {
-    question: "Can I import my existing client data?",
+    question: "Czy mogę zaimportować istniejące dane klientów?",
     answer:
-      "Yes! We support importing data from most popular salon software and spreadsheets. Our team can help you migrate for free.",
+      "Tak! Obsługujemy import danych z najpopularniejszych programów dla salonów i arkuszy kalkulacyjnych. Nasz zespół może pomóc Ci w migracji za darmo.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "Jakie metody płatności akceptujecie?",
     answer:
-      "We accept all major credit cards (Visa, Mastercard, American Express) and can also set up invoicing for annual plans.",
+      "Akceptujemy wszystkie główne karty kredytowe (Visa, Mastercard, American Express), a także możemy skonfigurować fakturowanie dla planów rocznych.",
   },
 ];
 
@@ -59,11 +59,11 @@ export const FAQSection = () => {
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Frequently Asked Questions
+            Najczęściej zadawane pytania
           </h2>
           <p className="text-muted-foreground">
-            Got questions? We've got answers. Can't find what you're looking
-            for? Reach out to our support team.
+            Masz pytania? Mamy odpowiedzi. Nie możesz znaleźć tego, czego
+            szukasz? Skontaktuj się z naszym zespołem wsparcia.
           </p>
         </motion.div>
 

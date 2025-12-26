@@ -33,7 +33,7 @@ export const HeroSection = () => {
           >
             <Star className="w-4 h-4 text-primary fill-primary" />
             <span className="text-sm font-medium text-primary">
-              Trusted by 2,500+ salons worldwide
+              Zaufało nam ponad 2500 salonów na całym świecie
             </span>
           </motion.div>
 
@@ -44,8 +44,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6"
           >
-            Transform Your Salon Into a{" "}
-            <span className="gradient-text">Thriving Business</span>
+            Przekształć swój salon w{" "}
+            <span className="gradient-text">prosperujący biznes</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -55,9 +55,9 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            The all-in-one platform that helps beauty professionals manage
-            appointments, delight clients, and grow revenue — all from one
-            beautiful dashboard.
+            Kompleksowa platforma, która pomaga profesjonalistom beauty
+            zarządzać wizytami, zachwycać klientów i zwiększać przychody —
+            wszystko z jednego pięknego panelu.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -68,12 +68,12 @@ export const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
           >
             <Button variant="hero" size="xl" className="group">
-              Start Your Free 14-Day Trial
+              Rozpocznij darmowy 14-dniowy okres próbny
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="hero-outline" size="xl" className="group">
               <Play className="w-5 h-5 fill-primary" />
-              Watch Demo
+              Zobacz demo
             </Button>
           </motion.div>
 
@@ -86,11 +86,11 @@ export const HeroSection = () => {
           >
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-primary" />
-              <span>No credit card required</span>
+              <span>Nie wymagamy karty kredytowej</span>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-muted-foreground" />
             <div className="hidden sm:flex items-center gap-2">
-              <span>Cancel anytime</span>
+              <span>Anuluj w dowolnym momencie</span>
             </div>
           </motion.div>
         </div>
@@ -130,9 +130,11 @@ export const HeroSection = () => {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">
-                      Revenue Growth
+                      Wzrost przychodów
                     </p>
-                    <p className="font-semibold text-foreground">This Month</p>
+                    <p className="font-semibold text-foreground">
+                      W tym miesiącu
+                    </p>
                   </div>
                 </div>
               </motion.div>

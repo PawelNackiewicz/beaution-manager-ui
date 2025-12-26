@@ -4,44 +4,52 @@ import { Sun, Clock, Coffee, Moon, Check } from "lucide-react";
 
 const timelineSteps = [
   {
-    time: "7:00 AM",
+    time: "7:00",
     icon: Sun,
-    title: "Morning Prep",
+    title: "Poranne przygotowania",
     description:
-      "Review your day's schedule at a glance. Beaution sends automatic reminders to all clients.",
+      "Przejrzyj harmonogram dnia w mgnieniu oka. Beaution wysyła automatyczne przypomnienia do wszystkich klientów.",
     benefits: [
-      "Automated SMS reminders",
-      "Staff schedules ready",
-      "Zero no-shows",
+      "Automatyczne przypomnienia SMS",
+      "Gotowe grafiki personelu",
+      "Zero niestawiennictw",
     ],
   },
   {
-    time: "10:00 AM",
+    time: "10:00",
     icon: Clock,
-    title: "Peak Hours",
+    title: "Godziny szczytu",
     description:
-      "Manage walk-ins seamlessly while keeping appointments on track with real-time updates.",
+      "Zarządzaj klientami bez rezerwacji płynnie, jednocześnie utrzymując wizyty na właściwym torze dzięki aktualizacjom w czasie rzeczywistym.",
     benefits: [
-      "Live availability",
-      "Quick check-ins",
-      "Multi-staff coordination",
+      "Dostępność na żywo",
+      "Szybkie zameldowania",
+      "Koordynacja wielu pracowników",
     ],
   },
   {
-    time: "2:00 PM",
+    time: "14:00",
     icon: Coffee,
-    title: "Afternoon Flow",
+    title: "Popołudniowy rytm",
     description:
-      "Process payments instantly, send receipts, and let clients rebook before they leave.",
-    benefits: ["One-tap payments", "Instant rebooking", "Upsell suggestions"],
+      "Przetwarzaj płatności natychmiast, wysyłaj paragony i pozwól klientom umówić się ponownie zanim wyjdą.",
+    benefits: [
+      "Płatności jednym kliknięciem",
+      "Natychmiastowa rezerwacja",
+      "Sugestie dodatkowych usług",
+    ],
   },
   {
-    time: "6:00 PM",
+    time: "18:00",
     icon: Moon,
-    title: "Closing Time",
+    title: "Czas zamknięcia",
     description:
-      "Review your day's revenue, send thank-you messages, and let tomorrow's reminders go out.",
-    benefits: ["Daily reports", "Auto thank-you emails", "Next-day prep"],
+      "Przejrzyj przychody dnia, wyślij wiadomości z podziękowaniami i pozwól na wysłanie przypomnień na jutro.",
+    benefits: [
+      "Raporty dzienne",
+      "Automatyczne e-maile z podziękowaniami",
+      "Przygotowanie na następny dzień",
+    ],
   },
 ];
 
@@ -61,14 +69,14 @@ export const BenefitsTimeline = () => {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            How It Works
+            Jak to działa
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            A Day in Your Transformed Salon
+            Dzień w Twoim przekształconym salonie
           </h2>
           <p className="text-muted-foreground">
-            See how Beaution streamlines every moment of your workday, from
-            opening to closing.
+            Zobacz, jak Beaution usprawnia każdy moment Twojego dnia pracy, od
+            otwarcia do zamknięcia.
           </p>
         </motion.div>
 

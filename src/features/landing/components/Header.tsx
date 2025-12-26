@@ -5,10 +5,10 @@ import { Button } from "@/components";
 import { Menu, X, Sparkles } from "lucide-react";
 
 const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#benefits" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Funkcje", href: "#features" },
+  { label: "Jak to działa", href: "#benefits" },
+  { label: "Opinie", href: "#testimonials" },
+  { label: "Cennik", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
 
